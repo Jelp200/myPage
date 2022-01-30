@@ -1,4 +1,51 @@
-h1{
+/*  PALETA DE COLORES */
+:root{
+    /*  Colores */
+    --primario: #5E2129;
+    --segundario: #746c6c75;
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --gris: #75757575;
+}
+
+/*  ESCALABILIDAD REM   (1 rem = 10 px) */
+html{
+    font-size: 62.5%;
+}
+
+/*  ESTILO DE LETRA DE LA PAGINA */
+body{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*  ESTILOS TITULOS */
+.titulo{
     text-align: center;
-    color: #5e2129;
+    font-size: 3.8rem;
+}
+
+.titulo span{
+    font-size: 2rem;
+}
+
+/*  ESTILO NAVBAR   */
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.navBg{
+    background-color: var(--segundario);
+}
+
+.navPrincipal{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navPrincipal a{
+    color: var(--blanco);
+    text-decoration: none;
 }

@@ -5,36 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelancer</title>
-    <!-- Carga mucho antes las hojas de estilos -->
+    <!--    NORMALIZACION DE PAGINA -->
+    <link rel="preload" href="./css/normalize.css" as="style">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!--    FONTS   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+    <!--    PRELOAD HOJA DE ESTILOS-->
     <link rel="preload" href="./css/styles.css" as="style">
     <link rel="stylesheet" href="./css/styles.css">
-    <!--
-    CSS en el HTML
-    <style>
-        h1{
-            text-align: center;
-            color: #5e2129;
-        }
-    </style>
-    -->
 </head>
 <body>
     <header>
-        <h1>Jorge Peña CEO de GRADUS</h1>
+        <h1 class="titulo">Jorge Peña<span> CEO de GRADUS</span></h1>
     </header>
     
-    <nav>
-        <!--Shift + Alt + Down-->
-        <a href = "#">Inicio</a>
-        <a href = "#">Sobre Mi</a>
-        <a href = "#">Clientes</a>
-        <a href = "#">Contacto</a>
+    <nav class="navBg">
+        <div class="navPrincipal contenedor">
+            <a href = "#">Inicio</a>
+            <a href = "#">Sobre Mi</a>
+            <a href = "#">Clientes</a>
+            <a href = "#">Contacto</a>
+        </div>
     </nav>
 
+    <!--
     <img src = "./img/hero.jpg" alt = "hero">
+    -->
 
     <section>
-        <h2>Diseño y desarrollo web freelancer</h2>
+        <h2 class="titulo">Diseño y desarrollo web<span> freelancer</span></h2>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="2" stroke="#5e2129" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <circle cx="12" cy="11" r="3" />
@@ -87,18 +88,30 @@
             </svg>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt placeat et. Repudiandae et nisi voluptas ipsam, cumque quae totam veniam facere eius modi iusto earum adipisci ad praesentium vel!</p>
         </section>
+
+        <section>
+            <h4>Blockchain</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3" />
+                <line x1="12" y1="12" x2="20" y2="7.5" />
+                <line x1="12" y1="12" x2="12" y2="21" />
+                <line x1="12" y1="12" x2="4" y2="7.5" />
+              </svg>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, obcaecati cum soluta et saepe similique maxime illum neque ab earum eum culpa beatae amet magni architecto inventore non impedit quas.</p>
+        </section>
     </main>
     
     <section>
         <h2>Contacto</h2>
-        <!-- Formulario -->
+        <!--    FORMULARIO  -->
         <form action = "">
-            <!-- Grupo de campos -->
+            <!--    GRUPO DE CAMPOS -->
             <fieldset>
                 <legend>Concactame llenando todos los campos</legend>
 
                 <div>
-                    <!-- Indicación -->
+                    <!--    INDICACIÓN  -->
                     <label for="">Nombre</label>
                     <input type = "text" placeholder = "Tu nombre">
                 </div>
