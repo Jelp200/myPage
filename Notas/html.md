@@ -45,3 +45,15 @@ Para poder declarar enlcaes en HTML lo que debemos hacer es incluir la siguiente
 ```html
 <a href="dirección del enlace">Titulo del enlace</a>
 ```
+
+### SVG's e Imagenes en HTML
+Dentro de CSS podremos utilizar vectores e imagenes, una buena herramienta para emplear inocos es <a href="https://tablericons.com/">Tabler icons</a> y para su etiqueta para implementarlas es:
+```html
+<img src="ruta de la imagen"> <!-- Para imagenes -->
+```
+
+### Formularios
+En HTML podemos implementar formularios con la siguiente etiqueta:
+```html
+<form>
+```
