@@ -199,3 +199,61 @@ Flexbox se especializa para alinear elementos a nuestros diseños. No añade efe
 
 ### Estilos para escribir en CSS
 #### ¿BEM, Utility First o Módulos?
+
+- BEM (Bloques, elementos y modificadores)
+```css
+.card{}
+.card__titulo{}
+.card__imagen{}
+.card__boton{}
+.card__boton--activo{}
+```
+- Utility first
+Es una propiedad y valor por clase.
+```css
+.text-center{}
+.color-red-100{}
+.bg-blue-200{}
+.p-2{}
+.m-2{}
+```
+- Modulos
+Definimos el contenido principla y seleccionamos cada elemento HTML.
+```css
+.card{}
+.card h2{}
+.card img{}
+.card a{}
+```
+
+### Responsive web design
+
+Se refiere a que en todos los dispositivos nuestra página web se vea de manera correcta. Cómo podemos hacer que nuestro sitio web sea responsive? Con Media Queries
+```css
+@media (min-width: 768px){
+    /*...
+    Codigo
+    */...
+}
+@media (min-width: 992px){
+    /*...
+    Codigo
+    */...
+}
+```
+
+### CSS Box model
+
+En CSS todo es una caja y depende de cuatro cosas: tamaño de contenido, relleno (padding), borde y margen.
+
+Para evitarnos andar moviendo el tamaño dentro de nuestro código CSS y así llegar al tamaño exacto, lo que haremos será lo siguiente:
+```css
+html{
+    box-sizing: inherit;
+}
+
+/* "*" Es como un selector universal*/
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+```
