@@ -257,3 +257,17 @@ html{
     box-sizing: inherit;
 }
 ```
+
+### CSS Grid
+
+Nos permite definis la ubicación y tamaño de nuestros elementos. Mientras en flexbox el contenido crece automáticamente, en css grid el contenido se agrupa dentro de un area definida.
+
+Mientras que en felxbox solo podemos movernos en 1D "row o column", en CSS Grid podemos movernos en las 2D.
+
+Algunos diseños son más fáciles en Grid y otros en flexbox
+
+### Grid vs Flexbox
+
+Utilizamos FLEXBOX para alinear o distribuir elementos que estarán dentro de contendeores, por ejemplo, cuando tenemos un logotipo con enlaces dentro de una barra de navegación.
+
+Utilizamos GRID para definir el layout de nuestros sitios web, como pueden ser las columnas o contenedores de elementos.
