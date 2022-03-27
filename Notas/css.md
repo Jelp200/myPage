@@ -166,3 +166,36 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 ```
+
+### Displays en CSS
+
+Dentro de CSS tenemos dos tipos de displays, block o inline.
+  - Block
+```css
+/* EL ELEMENTO SE COLOCARÁ UNO DEBAJO DEL OTRO SIN IMPORTAR SU TAMAÑO O CONTENIDO */
+
+display: block;
+```
+  - Inline
+```css
+/* EL ELEMENTO SE POSICIONARA A LA DERECHA UNA VEZ QUE HAYA TOMADO EL ESPACIO QUE REQUIERE */
+
+display: inline;
+```
+
+No se es necesario especificar el display en cada elemento.
+
+### Flexbox
+
+Flexbox fue diseñado como un modelo unidimensional para crear layouts. En flexbox solo podemos colocar y distribuir nuestros elementos en una dirección "fila (row)" y "columna (column)".
+
+Row es aplicado por default al definir un "display: felx;". Los otros valores son: "row-reverse", "column" y "column-reverse".
+
+Si elegimos "row-reverse" los elementos hijos se colocarán de izquierda a derecha uno junto al otro.
+
+Si elegimos "column" o "column-reverse" los elementos se colocarán de arriba hacia abajo.
+
+Flexbox se especializa para alinear elementos a nuestros diseños. No añade efectos de animación, ni de textos, es una tecnología utilizada únicamente para los layouts y sustituye a los floats o table-cell.
+
+### Estilos para escribir en CSS
+#### ¿BEM, Utility First o Módulos?

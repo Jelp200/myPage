@@ -24,3 +24,23 @@ body{
 .titulo span{
     font-size: 2rem;
 }
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto; /*top, rigth, bottom, left*/
+}
+
+.navegacionBg{
+    background-color: var(--secundario);
+}
+
+.navegacionPrincipal{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacionPrincipal a{
+    color: var(--blanco);
+    text-decoration: none;
+}
