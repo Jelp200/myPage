@@ -57,3 +57,20 @@ En HTML podemos implementar formularios con la siguiente etiqueta:
 ```html
 <form>
 ```
+
+### Medidas en HTML
+En html podemos incluir unidades de medida tales como px, rem y em, estas unidades se las podremos aplicar a una etiqueta llamada "span".
+  - em (Tamaño basado en el documento)
+  - rem (Relatividad al documento)
+  - px
+
+Rem viene siendo la mejor forma para poder diseñar nuestros sitios web, 1re sera igual a 10 px, para poder realizar está conversión lo que hacemos es lo siguiente en CSS.
+```css
+/* 1rem = 10px */
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+}
+```
